@@ -31,6 +31,12 @@ stages:
       - apt-get update
       - apt-get install -y tailscale
 
+  - name: install-vim
+    type: apt
+    source:
+      packages:
+        - vim
+
   # - name: install-debs
   #   type: includes
   #   includes:
